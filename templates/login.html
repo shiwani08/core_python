@@ -6,19 +6,15 @@
     <title>Login</title>
   </head>
   <body>
-    <!-- {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul style="color: green;">
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %} -->
-    <form action="{{ url_for('login') }}" method="post">
-      <p>Enter username: <input type="text" name="username" placeholder="Username" required /></p>
-      <p>Enter password: <input type="password" name="password" placeholder="Password" required /></p>
-      <button type="submit">Log In</button>
+    <form method="POST" action="/login">
+      {{ form.hidden_tag() }}
+      <p>{{ form.username.label }} {{ form.username() }}</p>
+      <p>{{ form.password.label }} {{ form.password() }}</p>
+      <p>{{ form.submit() }}</p>
+
+      {% for message in get_flashed_messages(with_categories=true) %}
+      <p style="color: red">{{ message[1] }}</p>
+      {% endfor %}
     </form>
   </body>
 </html>

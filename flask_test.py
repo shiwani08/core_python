@@ -1,60 +1,61 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
+from forms.input import LoginForm
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'
 
-# In-memory 'database' just for demo
 with open('users.json', 'r') as f:
     users = json.load(f)
 
 @app.route('/', methods=['GET', 'POST'])
 def signup():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
+    form = LoginForm()
 
-        # Check if username already exists
+    if form.validate_on_submit():
+        username = form.username.data
+        password = form.password.data
+
         for user in users:
             if user['username'] == username:
+                flash("Username already exists! Please log in instead.")
                 return redirect(url_for('login'))
 
         # Otherwise register new user
         new_user = {
-            "first_name": request.form.get('first_name'),
-            "last_name": request.form.get('last_name'),
-            "username": request.form.get('username'),
-            "password": request.form.get('password')
+            "first_name": "Guest",
+            "last_name": "User",
+            "username": username,
+            "password": password
         }
         users.append(new_user)
 
-        # Save to JSON file
         with open('users.json', 'w') as f:
             json.dump(users, f, indent=4)
 
+        flash("Signup successful! You can now log in.", "success")
         return redirect(url_for('login'))
 
-    return render_template('index.html')
+    return render_template('index.html', form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
+    form = LoginForm()
 
-        # Check if credentials are correct
+    if form.validate_on_submit():
+        username = form.username.data
+        password = form.password.data
+
         for user in users:
             if user['username'] == username and user['password'] == password:
-                flash(f"Welcome back, {user['first_name']}!")
+                flash(f"Welcome back, {user['first_name']}!", "success")
                 return redirect(url_for('home'))
 
-        flash("User not found, please sign up")
+        flash("Invalid credentials. Please sign up first.", "error")
         return redirect(url_for('signup'))
 
-    # If method is GET, just show the login page
-    return render_template('login.html')
-
+    return render_template('login.html', form=form)
 @app.route('/home')
 def home():
     return render_template('home.html')
