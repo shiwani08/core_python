@@ -34,5 +34,11 @@
         "last_name": "Bing",
         "username": "thebings",
         "password": "hehehaha9892350"
+    },
+    {
+        "first_name": "Guest",
+        "last_name": "User",
+        "username": "useranme313",
+        "password": "adfadfaeaou"
     }
 ]
