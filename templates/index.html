@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Sign Up</h1>
     <form action="/" method="POST">
-        <input type="text" name="username" placeholder="Enter username" required>
-        <input type="password" name="password" placeholder="Enter password" required>
-        <button type="submit">Sign Up</button>
+      <input
+        type="text"
+        name="first_name"
+        placeholder="Enter first name"
+        required
+      />
+      <input
+        type="text"
+        name="last_name"
+        placeholder="Enter last name"
+        required
+      />
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter username"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        required
+      />
+      <button type="submit">Sign Up</button>
+
+      {% if request.args.get('message') %}
+      <p style="color: red">{{ request.args.get('message') }}</p>
+      {% endif %}
     </form>
 
     <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
-</body>
+  </body>
 </html>

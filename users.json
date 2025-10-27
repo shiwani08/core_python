@@ -1,0 +1,38 @@
+[
+    {
+        "first_name": "John",
+        "last_name": "Doe",
+        "username": "johndoe",
+        "password": "securepassword123"
+    },
+    {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "username": "janesmith",
+        "password": "securepassword456"
+    },
+    {
+        "first_name": "Shiwani",
+        "last_name": "Soni",
+        "username": "shiwani08",
+        "password": "shiwani0987"
+    },
+    {
+        "first_name": "Jackie",
+        "last_name": "Chan",
+        "username": "jackie",
+        "password": "jackei1233"
+    },
+    {
+        "first_name": "Bob",
+        "last_name": "The Builder",
+        "username": "bobbuilds",
+        "password": "creating88656"
+    },
+    {
+        "first_name": "Chandler",
+        "last_name": "Bing",
+        "username": "thebings",
+        "password": "hehehaha9892350"
+    }
+]
