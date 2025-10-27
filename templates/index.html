@@ -8,30 +8,30 @@
   <body>
     <h1>Sign Up</h1>
     <form action="/" method="POST">
-      <input
+      <p>Enter first name: <input
         type="text"
         name="first_name"
-        placeholder="Enter first name"
+        placeholder="John "
         required
-      />
-      <input
+      /></p>
+      <p>Enter last name: <input
         type="text"
         name="last_name"
-        placeholder="Enter last name"
+        placeholder="Doe"
         required
-      />
-      <input
+      /></p>
+      <p>Enter username: <input
         type="text"
         name="username"
-        placeholder="Enter username"
+        placeholder="abc"
         required
-      />
-      <input
+      /></p>
+      <p>Enter password: <input
         type="password"
         name="password"
-        placeholder="Enter password"
+        placeholder="pass1234"
         required
-      />
+      /></p>
       <button type="submit">Sign Up</button>
 
       {% if request.args.get('message') %}
