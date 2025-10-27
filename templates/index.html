@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics of Flask</title>
+    <title>Sign Up</title>
 </head>
 <body>
-    <h1>Welcome to Flask Basics</h1>
+    <h1>Sign Up</h1>
+    <form action="/" method="POST">
+        <input type="text" name="username" placeholder="Enter username" required>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
 </body>
 </html>
