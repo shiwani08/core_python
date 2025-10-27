@@ -1,15 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template
 from piglatin import pig_latin
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
     # print("Hello, World!")
-    return 'Hello, World! from flask1111'
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
-    return 'About Page'
+    return render_template('about.html')
 
 # dynamic routing example
 @app.route('/user/<username>')
