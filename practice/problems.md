@@ -14,6 +14,8 @@ Try to add an element to a tuple — what happens?
 
 5. Write a program to calculate area and perimeter of a rectangle.
 
+### ---------------------------------- DONE -----------------------------------------
+
 6. Given two numbers, print the quotient and remainder using // and %.
 
 7. Compute 2 ** 5 and explain the result.
