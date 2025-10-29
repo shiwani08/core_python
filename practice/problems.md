@@ -24,8 +24,6 @@ Try to add an element to a tuple — what happens?
 
 10. Create a dictionary for a student: {"name": "Bing", "age": 21, "marks": 89} and print keys, values, and items.
 
-### ---------------------------------- DONE -----------------------------------------
-
 11. Create two sets and perform union, intersection, and difference.
 
 12. Take a string "Python is fun" and:
@@ -45,6 +43,8 @@ Try to add an element to a tuple — what happens?
 17. Add a docstring explaining what the function does and how to use it.
 
 18. Import math and compute square root of 144.
+
+### ---------------------------------- DONE -----------------------------------------
 
 19. Use os to create a new directory called "test_folder".
 
