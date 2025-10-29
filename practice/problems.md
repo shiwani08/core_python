@@ -14,17 +14,17 @@ Try to add an element to a tuple — what happens?
 
 5. Write a program to calculate area and perimeter of a rectangle.
 
-### ---------------------------------- DONE -----------------------------------------
-
 6. Given two numbers, print the quotient and remainder using // and %.
 
 7. Compute 2 ** 5 and explain the result.
 
-8. Create a list and demonstrate all major list methods.
+8. Create a list and demonstrate all major list methods - append(), extend(), insert(), remove(), pop(), sort(), reverse(), count()
 
 9. Use a tuple to store coordinates (x, y) and try modifying it.
 
 10. Create a dictionary for a student: {"name": "Bing", "age": 21, "marks": 89} and print keys, values, and items.
+
+### ---------------------------------- DONE -----------------------------------------
 
 11. Create two sets and perform union, intersection, and difference.
 
