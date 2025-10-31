@@ -14,8 +14,6 @@
 
     ! Focus: Constructor, instance methods, encapsulation.
 
-### ---------------------------------- DONE -----------------------------------------
-
 ### 3. Shopping Cart
     - Create a Product and Cart class.
     - Add/remove items to the cart.
@@ -23,6 +21,8 @@
     - Handle edge cases (like removing an item not in cart).
 
     ! Focus: Class interactions (composition).
+
+### ---------------------------------- DONE -----------------------------------------
 
 ### 4. Shape Hierarchy
     - Create an abstract base class Shape with an abstract method area().
