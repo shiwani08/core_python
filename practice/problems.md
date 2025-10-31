@@ -44,8 +44,6 @@ Try to add an element to a tuple — what happens?
 
 18. Import math and compute square root of 144.
 
-### ---------------------------------- DONE -----------------------------------------
-
 19. Use os to create a new directory called "test_folder".
 
 20. Create your own module named greetings.py that has a hello() function, then import and use it.
@@ -59,6 +57,8 @@ Try to add an element to a tuple — what happens?
 24. Add else and finally blocks to see the order of execution.
 
 25. Create a custom exception class called InvalidAgeError.
+
+### ---------------------------------- DONE -----------------------------------------
 
 26. Create a decorator that prints "Function is being executed" before calling the actual function.
 
