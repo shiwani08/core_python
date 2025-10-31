@@ -14,6 +14,8 @@
 
     ! Focus: Constructor, instance methods, encapsulation.
 
+### ---------------------------------- DONE -----------------------------------------
+
 ### 3. Shopping Cart
     - Create a Product and Cart class.
     - Add/remove items to the cart.
