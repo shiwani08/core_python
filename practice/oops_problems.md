@@ -39,8 +39,6 @@
 
     ! Focus: Inheritance and method overriding.
 
-### ---------------------------------- DONE -----------------------------------------
-
 ### 6. Employee Management System
     - Create:
     - Base class: Employee
@@ -59,6 +57,8 @@
     - Then write a function that sends notifications without knowing the object type (duck typing).
 
     ! Focus: Polymorphism, method overriding.
+
+### ---------------------------------- DONE -----------------------------------------
 
 ### 8. Library Management System
     - Classes: Book
