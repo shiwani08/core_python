@@ -22,8 +22,6 @@
 
     ! Focus: Class interactions (composition).
 
-### ---------------------------------- DONE -----------------------------------------
-
 ### 4. Shape Hierarchy
     - Create an abstract base class Shape with an abstract method area().
     - Then implement:
@@ -40,6 +38,8 @@
     - Add attributes like fuel_type, max_speed, and capacity.
 
     ! Focus: Inheritance and method overriding.
+
+### ---------------------------------- DONE -----------------------------------------
 
 ### 6. Employee Management System
     - Create:
