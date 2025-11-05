@@ -58,8 +58,6 @@
 
     ! Focus: Polymorphism, method overriding.
 
-### ---------------------------------- DONE -----------------------------------------
-
 ### 8. Library Management System
     - Classes: Book
     - Member: Librarian
@@ -67,6 +65,8 @@
     - Apply encapsulation for availability status, and use inheritance if needed for roles.
 
     ! Focus: Object relationships, real-world modeling, encapsulation, abstraction.
+
+### ---------------------------------- DONE -----------------------------------------
 
 ### 9. Payment Gateway (Abstraction + Polymorphism)
     - Abstract class: PaymentProcessor
